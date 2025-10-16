@@ -1,1 +1,14 @@
 
+---
+
+## 📄 `testes/comandos_curl.txt`
+
+```bash
+# Cadastro
+curl -X POST http://127.0.0.1:8000/cadastro -H "Content-Type: application/json" -d "{\"nome\":\"Lucas\",\"email\":\"Lucas@teste.com\",\"senha\":\"123\"}"
+
+# Login
+curl -X POST http://127.0.0.1:8000/login -H "Content-Type: application/json" -d "{\"email\":\"Lucas@teste.com\",\"senha\":\"123\"}"
+
+# Extrato
+curl http://127.0.0.1:8000/extrato?email=Lucas@teste.com
